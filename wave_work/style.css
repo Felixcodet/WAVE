@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;800&display=swap');
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.section {
+    height: 100vh;
+    padding: 5rem 4rem;
+}
