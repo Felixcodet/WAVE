@@ -4,9 +4,9 @@ html,body
     padding:0;
     font-family: 'Inter', sans-serif;
 }
-p {color: red}
-h3 {color: blue}
-a {color: rgb(133, 133, 37); font-size: 16px;;}
+p {color: #000000;}
+h3 {color: #0345FD; font-weight:400}
+a {color: #929094; font-size: 12px;text-decoration: none; font-weight: 400; letter-spacing: 1.25px;}
 a,#logo {transition: all 400ms; -webkit-transition: all 400ms;  -moz-transition: all 400ms;}
 
 /* --------------------------- header --------------------------- */
@@ -16,8 +16,11 @@ header {
     position:fixed;
     top: 0px;
     left: 0px;
-    background: #e4e4e4;
+    background: #f7f7f7;
     z-index: 1;
+}
+div#logo{
+    padding: 18px;
 }
 
 #logo {
@@ -31,26 +34,37 @@ header {
     width: 100%
 }
 #logo:hover{
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 
 
 header nav {
-    float: right;
-    margin: 10px 50px 0 0;
+   
+    list-style: none; 
+    align-items: left;
+    text-align: left;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 header nav ul li{
-    float: left;
-    margin-left: 50px;
-    list-style-type: none;
+    display: inline-block;
+    padding: 12px;
+    padding-left: 40px;
+    text-decoration: none;
+ 
 }
 
 header nav ul li a:hover{
-   color: turquoise;
+   color: #0345FD;
+   font-weight: 500;
 }
-
+.button{
+    margin: 8px;
+    padding: 5px;
+    float: right;
+}
 
 
 
@@ -68,3 +82,21 @@ li {
 }
 
 /* --------------------------- Events --------------------------- */
+#Events{background-color: #ffffff}
+#Browse{background-color: #F3F0F5}
+#Friends{background-color: #ffffff}
+#Mood{background-color: #F3F0F5}
+
+
+
+.map{
+    position: relative;
+    left: 600px;
+    height:400px;
+    width: 400px;
+    overflow: hidden;
+}
+.circle{
+    position:absolute;
+    top: 30px;
+}
