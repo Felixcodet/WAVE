@@ -5,6 +5,10 @@
     <title>wave</title>
     <meta charset="utf-8">
     <link type="text/css" rel="stylesheet" href="style.css">
+
+    <script src="lib/anime.min.js"></script>
+    <script src="src/main.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet"> 
@@ -15,114 +19,45 @@
         <!-- Header -------------------------------------------->
 
     <header>
-        <div id="logo">
-            <!-- <a href="http://sollteicheinbiertrinkengehen.de/"> -->
-            <img src="static/wave_logo.png" alt="Logo">
-            </a>
-        </div>
-    
-        <nav id="main-nav">
-            <ul>
-                <li><a href="#Events">EVENTS</a></li>
-                <li><a href="#Friends">FRIENDS</a></li>
-                <li><a href="#Mood">MOOD</a></li>
-
-                <button class="button">THROW AN EVENT</button> 
-            </ul>
-        
-        </nav>
-
-
-<!-- button 
-button icon
-button img -->
 
     </header>
-    <body>
+
 
         <!-- Events --------------------------------------------->
 
     <section id="Events">
-        <h3>I want to find...</h3>
-        <div>
-            <label for="EventCategory"></label>
-
-            <select name="EventCategory" id="EventCategory">
-                <option value="food">Food</option>
-                <option value="cultural">Drink</option>
-                <option value="cultural">Cultural</option>
-                <option value="cultural">Sports & Hobbies</option>
-                <option value="cultural">Celebration</option>
-                
-            </select> 
             <div class="map">
-                <img class="circle" src="/static/circles/Ellipse1.svg"/>
-                <img class="circle" src="/static/circles/Ellipse2.svg"/>
-                <img class="circle" src="/static/circles/Ellipse3.svg"/>
-                <img class="circle" src="/static/circles/Ellipse4.svg"/>
-                <img class="circle" src="/static/circles/Ellipse5.svg"/>
-                <img class="circle" src="/static/circles/Ellipse6.svg"/>
+                <img class="circle" src="/static/circles/Group Ellipse.svg"/>
             </div>
-        </div>
+            <img class="logo" src="/static/wave_logo_white.svg"/>
     </section>
 
 
         <!-- Events (2nd part) ---------------------------------->
 
     <section id=Browse>
-        <h3>Browse Events</h3>
+        <!-- <h3>Browse Events</h3>
         <ul>
             <li><p>Event1</p></li>
             <li><p>Event2</p></li>
             <li><p>Event3</p></li>
             <li><p>Event4</p></li>
-        </ul>
+        </ul> -->
+        <h3 class="introduction">Hey we are wave 👋 <br>
+            your new favorite social media service</h3>
     </section>
     
 
-        <!-- Friends --------------------------------------------->
-
-    <section id="Friends">
-        <h3>Invite your friends to an event</h3>
-        <div id="divFriends">
-            <input type="search" placeholder="Type friends name to find">
-
-            <ul>
-                <li><p>friend1</p></li>
-                <li><p>friend2</p></li>
-                <li><p>friend3</p></li>
-                <li><p>friend4</p></li>
-            </ul>
-        </div>
-
-    </section>
-
-
-        <!-- Mood ----------------------------------------------->
-
-    <section id="Mood">
-        <h3>Update your mood</h3>
-            <div id="moodCharacter">
-                <!-- <a href="#"><img src="" alt="mood"></a> -->
-
-                <div class="slidecontainer">
-                    <input type="range" min="1" max="4" value="1" class="slider" id="mood">
-                  </div>
-            
-        </div>
-    </section>
-
-
         <!-- Footer -------------------------------------------->
 
-    <footer>
+    <!-- <footer>
         <h3>Enjoy together</h3>
         <input type="contact" placeholder="email or phone number">
         <ul>
             <li><p>About</p></li>
             <li><p>Data Protection</p></li>
         </ul>
-    </footer>
+    </footer> -->
 </body>
 
 </html>
