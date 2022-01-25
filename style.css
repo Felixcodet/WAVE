@@ -27,7 +27,8 @@ li {
 
 /* --------------------------- Events --------------------------- */
 #Events{background-color: #0345FD}
-#Browse{background-color: #0345FD; padding-top: 50px;}
+#Browse{background-color: #0345FD}
+#drops{background-color: #0345FD}
 
 
 
@@ -37,12 +38,11 @@ li {
     justify-content: center;
     height:800px;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
-.circle{
-    width: 100%;
+.circles{
+    width: auto;
     height:100%;
-    position:absolute;
 }
 
 .logo {
@@ -52,4 +52,15 @@ li {
 }
 .introduction{
     text-align: center;
+    padding-top: 100px;
+    margin:0px;
+}
+
+/* .dropsDiv{
+    max-height:30px;
+    overflow: hidden;
+} */
+.bild{
+    position: absolute;
+    left: -1400px;
 }
