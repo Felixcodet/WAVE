@@ -36,6 +36,14 @@ section {
 #drops{background-image: linear-gradient(#0345FD 600px, #ffffff 800px); padding-top: 1px; overflow-x: hidden;min-height: 800px}
 #footer{background-color:rgb(255, 255, 255); min-height: 480px;}
 
+.cancel{
+    position: fixed;
+    right: 37px;
+    top: 23px;
+    
+    color: white
+}
+
 .mapWave{
     display: block;
     align-items: center;
