@@ -29,7 +29,6 @@ let animation2 = bodymovin.loadAnimation({
 
 
 
-
 let animation = bodymovin.loadAnimation({
   container: document.querySelector('.boxxx'),
   renderer: 'svg',
@@ -37,6 +36,15 @@ let animation = bodymovin.loadAnimation({
   autoplay: true,
   path: 'static/friends.json'
 })
+
+let animation3 = bodymovin.loadAnimation({
+  container: document.querySelector('.handwave'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'static/hello.json'
+})
+
 
 
 
@@ -71,10 +79,21 @@ tween.add(
 const controller = new ScrollMagic.Controller();
 
 const scene = new ScrollMagic.Scene({
-  triggerElement: '#trigger',
-  duration: 3000,
+  triggerElement: '.neuerText',
+  duration: 3000
 })
 
 .setTween(tween)
-.addIndicators()
+// .addIndicators()
 .addTo(controller)
+
+
+
+
+// create scene
+// var scene2 = new ScrollMagic.Scene({
+//         triggerElement: ".neuerText"
+//     })
+//     .on('start', helloo)
+//     .addIndicators()
+//     .addTo(controller);
