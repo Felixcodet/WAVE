@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WAVE</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <script src="lib/anime.min.js"></script>
+
+    <script src="lib/lottie.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js"></script>
+  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet"> 
+
+</head>
+
+<body>
+
+        <!-- Header -------------------------------------------->
+
+    <header>
+        
+    </header>
+
+
+        <!-- Events --------------------------------------------->
+        <div class="cancel">Login</div>
+    <section id="Events">
+            <div class="mapWave"></div>
+            <img class="logo" src="/static/wave_logo_white.svg"/>
+    </section>
+
+    <section id=Browse>
+        <div class="introduction-div">
+            <div class="handwave"></div>
+            <h3 class="introduction">Hey! We are WAVE<br>
+            Your new favorite social media service</h3>
+        </div>
+    </section>
+
+    <section id=Friends>
+        <div class="flexbox">
+            <div class="parentColumn">
+            <h3 class="friendsFeature">Connect with your friends and plan events</h3>
+            <h3 class="neuerText">Meet completely new people</h3>
+            </div>
+
+            <div class="boxxx"></div>
+        </div>
+        <div id="trigger"></div>
+    </section>
+
+    <section id =drops>
+        <h3 class="introduction-drops">There are 5890 people<br>
+            meeting in 2825 drops right now</h3>
+        <div class="eventBoxes">
+            <div class="event">
+                <div class="emoji">🍕</div>
+                <div class="card">
+                    <div class="event_name title">Pizza in der Pizzeria</div>
+                    <div class="event_desc">
+                        <div class="host">
+                            <div class="profile">
+                                <img src="static/Profile.png" alt="profilePicture"> 
+                            </div>
+                            <div class="info">
+                                <div>Tom</div>
+                                <div class="small">with 1 friend</div>
+                            </div>
+                        </div>
+
+
+                        <div class="infogroups">
+                            <div class="info">
+                                <div class="small">Date</div>
+                                <div class="normal">23.11.2021</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Starting time</div>
+                                <div class="normal">6:00 PM</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Invitees</div>
+                                <div class="normal">4 / 6</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Age</div>
+                                <div class="normal">25 ~ 30</div>
+                            </div>
+                        </div>
+                        
+                        <div class="map"></div>
+
+
+                        <div class="button outlined">
+                            Request to join
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="event">
+                <div class="emoji">🍕</div>
+                <div class="card">
+                    <div class="event_name title">Pizza in der Pizzeria</div>
+                    <div class="event_desc">
+                        <div class="host">
+                            <div class="profile">
+                                <img class ="profilePic" src="static/Profile.png" alt="profilePicture"> 
+                            </div>
+                            <div class="info">
+                                <div>Tom</div>
+                                <div class="small">with 1 friend</div>
+                            </div>
+                        </div>
+
+
+                        <div class="infogroups">
+                            <div class="info">
+                                <div class="small">Date</div>
+                                <div class="normal">23.11.2021</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Starting time</div>
+                                <div class="normal">6:00 PM</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Invitees</div>
+                                <div class="normal">4 / 6</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Age</div>
+                                <div class="normal">25 ~ 30</div>
+                            </div>
+                        </div>
+                        
+                        <div class="map"></div>
+
+
+                        <div class="button outlined">
+                            Request to join
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+
+            <div class="event">
+                <div class="emoji">⚽️</div>
+                <div class="card">
+                    <div class="event_name title">VFB watching</div>
+                    <div class="event_desc">
+                        <div class="host">
+                            <div class="profile">
+                                <img class ="profilePic" src="static/Profile2.png" alt="profilePicture"> 
+                            </div>
+                            <div class="info">
+                                <div>Thomas</div>
+                                <div class="small">with 3 friends</div>
+                            </div>
+                        </div>
+
+
+                        <div class="infogroups">
+                            <div class="info">
+                                <div class="small">Date</div>
+                                <div class="normal">23.11.2021</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Starting time</div>
+                                <div class="normal">6:00 PM</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Invitees</div>
+                                <div class="normal">4 / 6</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Age</div>
+                                <div class="normal">25 ~ 30</div>
+                            </div>
+                        </div>
+                        
+                        <div class="map">
+                            <img src="static/map1.png" alt="map"> 
+                        </div>
+
+
+                        <div class="button outlined">
+                            Request to join
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+
+            <div class="event">
+                <div class="emoji">👟</div>
+                <div class="card">
+                    <div class="event_name title">night walk</div>
+                    <div class="event_desc">
+                        <div class="host">
+                            <div class="profile">
+                                <img class ="profilePic" src="static/Profile3.png" alt="profilePicture"> 
+                            </div>
+                            <div class="info">
+                                <div>Hyomin</div>
+                                <div class="small">with 4 friends</div>
+                            </div>
+                        </div>
+
+
+                        <div class="infogroups">
+                            <div class="info">
+                                <div class="small">Date</div>
+                                <div class="normal">23.11.2021</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Starting time</div>
+                                <div class="normal">8:00 PM</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Invitees</div>
+                                <div class="normal">4 / 6</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Age</div>
+                                <div class="normal">25 ~ 30</div>
+                            </div>
+                        </div>
+                        
+                        <div class="map">
+                            <img src="static/map2.png" alt="map"> 
+                        </div>
+
+
+                        <div class="button outlined">
+                            Request to join
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="event">
+                <div class="emoji">🌲</div>
+                <div class="card">
+                    <div class="event_name title">nature walk</div>
+                    <div class="event_desc">
+                        <div class="host">
+                            <div class="profile">
+                                <img class ="profilePic" src="static/Profile.png" alt="profilePicture"> 
+                            </div>
+                            <div class="info">
+                                <div>Tim</div>
+                                <div class="small">with 2 friends</div>
+                            </div>
+                        </div>
+
+
+                        <div class="infogroups">
+                            <div class="info">
+                                <div class="small">Date</div>
+                                <div class="normal">25.11.2021</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Starting time</div>
+                                <div class="normal">2:00 PM</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Invitees</div>
+                                <div class="normal">2 / 3</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Age</div>
+                                <div class="normal">20 ~ 25</div>
+                            </div>
+                        </div>
+                        
+                        <div class="map">
+                            <img src="static/map1.png" alt="map"> 
+                        </div>
+
+
+                        <div class="button outlined">
+                            Request to join
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="event">
+                <div class="emoji">🍿</div>
+                <div class="card">
+                    <div class="event_name title">cinema evening</div>
+                    <div class="event_desc">
+                        <div class="host">
+                            <div class="profile">
+                                <img class ="profilePic" src="static/Profile.png" alt="profilePicture"> 
+                            </div>
+                            <div class="info">
+                                <div>Anna</div>
+                                <div class="small">with 1 friend</div>
+                            </div>
+                        </div>
+
+
+                        <div class="infogroups">
+                            <div class="info">
+                                <div class="small">Date</div>
+                                <div class="normal">30.11.2021</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Starting time</div>
+                                <div class="normal">8:00 PM</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Invitees</div>
+                                <div class="normal">1 / 6</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Age</div>
+                                <div class="normal">20 ~ 25</div>
+                            </div>
+                        </div>
+                        
+                        <div class="map">
+                            <img src="static/map2.png" alt="map"> 
+                        </div>
+
+
+                        <div class="button outlined">
+                            Request to join
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="event">
+                <div class="emoji">🍕</div>
+                <div class="card">
+                    <div class="event_name title">Pizza essen Pizzeria</div>
+                    <div class="event_desc">
+                        <div class="host">
+                            <div class="profile">
+                                <img class ="profilePic" src="static/Profile2.png" alt="profilePicture"> 
+                            </div>
+                            <div class="info">
+                                <div>Tom</div>
+                                <div class="small">with 1 friend</div>
+                            </div>
+                        </div>
+
+
+                        <div class="infogroups">
+                            <div class="info">
+                                <div class="small">Date</div>
+                                <div class="normal">23.11.2021</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Starting time</div>
+                                <div class="normal">6:00 PM</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Invitees</div>
+                                <div class="normal">4 / 6</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Age</div>
+                                <div class="normal">25 ~ 30</div>
+                            </div>
+                        </div>
+                        
+                        <div class="map">
+                            <img src="static/map3.png" alt="map"> 
+                        </div>
+
+
+                        <div class="button outlined">
+                            Request to join
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="event">
+                <div class="emoji">🍕</div>
+                <div class="card">
+                    <div class="event_name title">6</div>
+                    <div class="event_desc">
+                        <div class="host">
+                            <div class="profile">
+                                <img class ="profilePic" src="static/Profile3.png" alt="profilePicture"> 
+                            </div>
+                            <div class="info">
+                                <div>Tom</div>
+                                <div class="small">with 1 friend</div>
+                            </div>
+                        </div>
+
+
+                        <div class="infogroups">
+                            <div class="info">
+                                <div class="small">Date</div>
+                                <div class="normal">23.11.2021</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Starting time</div>
+                                <div class="normal">6:00 PM</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Invitees</div>
+                                <div class="normal">4 / 6</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Age</div>
+                                <div class="normal">25 ~ 30</div>
+                            </div>
+                        </div>
+                        
+                        <div class="map"></div>
+
+
+                        <div class="button outlined">
+                            Request to join
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="event">
+                <div class="emoji">🍕</div>
+                <div class="card">
+                    <div class="event_name title">Pizza in der Pizzeria</div>
+                    <div class="event_desc">
+                        <div class="host">
+                            <div class="profile"></div>
+                            <div class="info">
+                                <div>Tom</div>
+                                <div class="small">with 1 friend</div>
+                            </div>
+                        </div>
+
+
+                        <div class="infogroups">
+                            <div class="info">
+                                <div class="small">Date</div>
+                                <div class="normal">23.11.2021</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Starting time</div>
+                                <div class="normal">6:00 PM</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Invitees</div>
+                                <div class="normal">4 / 6</div>
+                            </div>
+                            <div class="info">
+                                <div class="small">Age</div>
+                                <div class="normal">25 ~ 30</div>
+                            </div>
+                        </div>
+                        
+                        <div class="map"></div>
+
+
+                        <div class="button outlined">
+                            Request to join
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+           
+        </div>
+    </section>
+
+    <section id =footer>
+        <div class="footer-mid">
+        <div class="join-card">
+            <h3 class="join-title">Join WAVE</h3>
+            <div class="registrate">
+
+                <div class="input">
+                    <input value="" class="form-control" type="text" name="text-1542372332072" id="text-1542372332072" required="required" placeholder="Ihr Name">
+                    <label for="text-1542372332072">E-Mail</label>
+                </div>
+
+                <div class="input">
+                    <input value="" class="form-control" type="text" name="text-1542372332072" id="text-1542372332072" required="required" placeholder="Ihr Name">
+                    <label for="text-1542372332072">Password</label>
+                </div>
+                </div>
+                <button type="button" class="registrate-button">REGISTER AND START WAVE</button>
+            </div>
+
+            
+        </div>
+        </div>
+    </section>
+
+    <script src="src/main.js"></script>
+
+</body>
+</html>
